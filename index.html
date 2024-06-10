@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- explicacion: lo primero que deben incluir dentro del documento html es el head, 
+    dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras cosas -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rodrigo Ris</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/html.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <link rel="shortcut icon" href="./assets/html.png" type="image/x-icon" />
+  </head>
+  <body class="scroll">
+    <header class="encabezado">
+      <nav class="navegacion">
+        <a class="navegacion__enlace" href="#presentacion">
+          <h2 class="navegacion__titulo">Rodrigo Martin Ris</h2>
+        </a>
+        <ul class="enlaces">
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#presentacion">Inicio</a>
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#sobre-mi">Sobre mi</a>
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="principal">
+      <section class="presentacion" id="presentacion">
+        <div class="presentacion__contenedor_info">
+          <h1 class="presentacion__titulo">Diseñador, Técnico y Desarrollador</h1>
+          <p class="presentacion__parrafo">
+            Versatil, Autodidacta
+          </p>
+          <div class="presentacion__contenedor_botones">
+            <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
+            <a
+              href="./assets/docs/Cv Rodrigo Ris.pdf"
+              target="_blank"
+              class="boton"
+              role="button"
+              >Descargar CV</a>
+          </div>
+        </div>
+      </section>
+      <article class="articulo sobre_mi" id="sobre-mi">
+        <h2 class="articulo__titulo">Un poco sobre mi</h2>
+        <div class="articulo__contenedor_descripciones">
+          <section class="seccion_descripcion">
+            <div class="seccion_descripcion__porta_retrato">
+              <img
+                class="seccion_descripcion__imagen"
+                src="./assets/images/proyectos/lighting_1.jpg"
+                alt="foto diseñando escenografia"
+                title="escenografia"
+              />
+            </div>
+            <div
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              aria-label="descripcion personal"
+            >
+              <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                Mi historia
+              </h3>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+                Siendo ya, técnico en instalaciones y equipos electromecánicos con formación secundaria industrial. 
+                Comencé mi formación profesional en la ciudad de Resistencia, provincia del Chaco, a los 19 años, como técnico de espectáculos, 
+                la cual consiste en diseñar escenografías para el uso de luminarias en espacios nocturnos, 
+                con experiencia a lo largo de innumerables eventos, pude lograr centrarme en un propósito de firme consolidación
+                sobre el manejo y control de equipos láser en herramientas digitales. A la par de esto, entendiendo poco sobre la industria, 
+                me inicié en la programación asistiendo a eventos de Desarrollo de Software como ser Hackathon, Bootcamps de Arduino, 
+                Proyectos de Lógica entre otros. El desarrollo y la programación de equipos lasers para su funcionamiento, junto a los concursos mencionados 
+                me introdujeron a lenguajes de programación  como: C, C++. Mas adelante pude concluir cursos intensivos de Excel, Java, Sketchup y Blender. 
+                Actualmente me dedico como productor de eventos, y me encuentro cursando programación python, bases de datos, django y php.  
+              </p>
+            </div>
+          </section>
+          <section class="seccion_descripcion">
+            <div
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              aria-label="descripcion personal"
+            >
+              <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                Mis hobbies
+              </h3>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+                Me dedico desde los 6 años a la Música, siendo guitarra y piano los instrumentos que más ejecuto,
+                me gusta la fotografía, la electrónica digital y el diseño 3D.  
+              </p>
+            </div>
+            <div class="seccion_descripcion__porta_retrato">
+              <img
+                class="seccion_descripcion__imagen"
+                src="./assets/images/profile/Fondo_3.jpg"
+                alt="foto en un escenario"
+                title="en una banda de rock"
+              />
+            </div>
+          </section>
+        </div>
+      </article>
+      <article class="articulo proyectos" id="proyectos">
+        <h2 class="articulo__titulo">Mis proyectos</h2>
+        <div class="contenedor_tarjetas_grid">
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/Render_Supra_1.png"
+              alt="imagen del proyecto"
+              title="proyecto 2"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_2">Supra Pixel</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_2"
+              >
+              Render del #Supracine, para Nicolás Fischman, 
+              creador de contenido del canal SupraPixel en youtube.
+              </p>
+              <a href="https://www.youtube.com/watch?v=PoeO6iD8164&t" class="boton  boton_oscuro" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/Render 1.png"
+              alt="imagen del proyecto"
+              title="proyecto 1"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Discoteca</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_1"
+              >
+                Diseño de exteriores, propuesta de iluminación para discoteca.
+              </p>
+              <a href="https://drive.google.com/drive/folders/1Lb0hCnEdTHeVOYGjHWviNJqVGF7A9m2y?usp=sharing" class="boton" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/Render_Vorterix_2.png"
+              alt="imagen del proyecto"
+              title="proyecto 3"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_3">Vorterix</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_3"
+              >
+              Render de #Vorterix, para Lucas Fridman, 
+              co-productor del mismo, actual productor en OLGA.
+              </p>
+              <a href="https://www.youtube.com/watch?v=FtKdN6lQeGs" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a>
+            </div>
+          </article>
+        </div>
+      </article>
+    </main>
+    <footer class="pie_de_pagina" role="contentinfo">
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Redes</h4>
+        <ul class="enlaces enlaces_redes">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://www.linktr.ee/risrodrigo/"
+              target="_blank"
+            >
+              <img
+                class="enlaces__icono"
+                src="./assets/images/logos/linktree_logo.png"
+                alt="logo de linktree"
+                title="LinkTree"
+              />
+            </a>
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://github.com/rodrigoris"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/logos/github-logo.png"
+                alt="logo de github"
+                title="Github"
+            /></a>
+          </li>
+          
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://www.instagram.com/rodrigoris/"
+              target="_blank"
+            >
+              <img
+                class="enlaces__icono"
+                src="./assets/images/logos/ig-logo.png"
+                alt="logo de instagram"
+                title="Instagram"
+              />
+            </a>
+          </li>
+          
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://x.com/ris_rodrigo"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/logos/x-logo.png"
+                alt="logo de X"
+                title="X"
+            /></a>
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://wa.me/5493644133368"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/logos/wsp-icon.png"
+                alt="logo de Whatsapp"
+                title="Whatsapp"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- explicacion: la segunda columna sera para nuestros medios de contacto  -->
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://mail.google.com/mail/u/2/?ogbl#sent?compose=CllgCJlLWjLfxDMBsNkSvHHFLzbSggKrsgjchPwMBqfLlpMcsXtsHJTBDGDxGGCLHTGXqGrBXXq"
+              target="_blank"
+              >rodrigomartris@gmail.com</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://mail.google.com/mail/u/2/?ogbl#sent?compose=CllgCJlLWjLfxDMBsNkSvHHFLzbSggKrsgjchPwMBqfLlpMcsXtsHJTBDGDxGGCLHTGXqGrBXXq"
+              target="_blank"
+              >rodrigomartinris94@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- explicacion: la ultima columna sera para los enlaces de navegacion -->
+      <div class="pie_de_pagina__columna" role="navigation">
+        <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="#presentacion"
+              >Inicio</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+              >Sobre mi</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+              >Proyectos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- por ultimo los derechos de la pagina -->
+      <div class="pie_de_pagina__copyright">
+        <p>©️Copyright 2024</p>
+      </div>
+    </footer>
+    <!-- repaso de los elementos en el footer -->
+  </body>
+</html>
